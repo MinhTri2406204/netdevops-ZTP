@@ -1,0 +1,22 @@
+terraform {
+  required_version = ">=1.0"
+}
+
+resource "null_resource" "create_lab" {
+
+  provisioner "local-exec" {
+    command = "ssh root@192.168.88.129 \"mkdir -p /opt/unetlab/labs/NetDevOps\""
+  }
+
+  provisioner "local-exec" {
+    command = "scp demo.unl root@192.168.88.129:/opt/unetlab/labs/NetDevOps/"
+  }
+
+  provisioner "local-exec" {
+    command = "ssh root@192.168.88.129 \"/opt/unetlab/wrappers/unl_wrapper -a fixpermissions\""
+  }
+}
+
+terraform {
+  required_version = ">=1.0"
+}

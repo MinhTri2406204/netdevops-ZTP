@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="demo"
+id="11111111-1111-1111-1111-111111111111"
+version="1"
+scripttimeout="300"
+lock="0">
+
+  <topology>
+
+    <nodes>
+
+      <node id="1"
+      name="R1"
+      type="iol"
+      template="iol"
+      image="L3-ADVENTERPRISEK9-M-15.4-2T.bin"
+      ethernet="1"
+      nvram="1024"
+      ram="1024"
+      serial="0"
+      console=""
+      delay="0"
+      icon="Router-2D-Gen-White-S.svg"
+      config="0"
+      left="450"
+      top="150">
+
+        <interface
+        id="0"
+        name="e0/0"
+        type="ethernet"
+        network_id="2"/>
+
+      </node>
+
+
+      <node id="2"
+      name="R2"
+      type="iol"
+      template="iol"
+      image="L3-ADVENTERPRISEK9-M-15.4-2T.bin"
+      ethernet="1"
+      nvram="1024"
+      ram="1024"
+      serial="0"
+      console=""
+      delay="0"
+      icon="Router-2D-Gen-White-S.svg"
+      config="0"
+      left="650"
+      top="150">
+
+        <interface
+        id="0"
+        name="e0/0"
+        type="ethernet"
+        network_id="2"/>
+
+      </node>
+
+    </nodes>
+
+    <networks>
+
+      <network
+      id="2"
+      type="pnet1"
+      name="Net"
+      left="531"
+      top="198"
+      visibility="1"
+      icon="01-Cloud-Default.svg"/>
+
+    </networks>
+
+  </topology>
+
+</lab>
