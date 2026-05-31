@@ -16,7 +16,7 @@ provider "eveng" {
 }
 
 variable "router_count" {
-  default = 3
+  default = 1
 }
 
 resource "eveng_lab" "example" {
