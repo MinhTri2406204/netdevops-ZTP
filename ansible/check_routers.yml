@@ -1,0 +1,14 @@
+---
+- name: KIEM TRA KET NOI TOI CHUC NANG CO BAN CUA CISCO
+  hosts: cisco_routers
+  gather_facts: no
+
+  tasks:
+    - name: Go lenh show ip interface brief tren Router
+      cisco.ios.ios_command:
+        commands: show ip interface brief
+      register: command_output
+
+    - name: Hien thi trang thai cac cong mang thuc te
+      ansible.builtin.debug:
+        var: command_output.stdout_lines

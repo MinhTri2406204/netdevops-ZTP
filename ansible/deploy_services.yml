@@ -1,0 +1,22 @@
+---
+- name: TRIEN KHAI CAU HINH DICH VU NANG CAO HANG LOAT QUA ANSIBLE
+  hosts: cisco_routers
+  gather_facts: no
+ 
+  tasks:
+    - name: 1. Cau hinh ACL
+      cisco.ios.ios_config:
+        lines:
+          - access-list 10 permit 192.168.1.100
+          - access-list 10 deny any 
+  
+    - name: 2. Nhung ACL 10 vao line vty 0 4
+      cisco.ios.ios_config:
+        parents: line vty 0 4
+        lines:
+          - access-class 10 in
+
+    - name: 3 Ep ghi lai cau hinh 
+      cisco.ios.ios_command:
+        commands:
+          - write memory
