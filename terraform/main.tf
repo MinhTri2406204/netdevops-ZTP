@@ -10,13 +10,13 @@ terraform {
 }
 
 provider "eveng" {
-  host     = "http://192.168.88.136"
+  host     = "http://192.168.88.138"
   username = "admin"
   password = "eve"
 }
 
 variable "router_count" {
-  default = 1
+  default = 2
 }
 
 resource "eveng_lab" "example" {
