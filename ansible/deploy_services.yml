@@ -1,7 +1,7 @@
 ---
 - name: TRIEN KHAI CAU HINH DICH VU NANG CAO HANG LOAT QUA ANSIBLE
-  hosts: cisco_routers
-  gather_facts: no
+  hosts: all
+  gather_facts: yes
  
   tasks:
     - name: 1. Cau hinh ACL
