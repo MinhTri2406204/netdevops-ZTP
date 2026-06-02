@@ -1,5 +1,5 @@
 ---
-#TEST
+#TESTING
 - name: TRIEN KHAI CAU HINH DICH VU NANG CAO HANG LOAT QUA ANSIBLE
   hosts: all
   gather_facts: yes
