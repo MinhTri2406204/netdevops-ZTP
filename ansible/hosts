@@ -7,10 +7,7 @@ ansible_network_os=cisco.ios.ios
 ansible_user=admin
 ansible_ssh_pass=123
 
-ansible_become=yes
-ansible_become_method=enable
-ansible_become_password=123
+ansible_become=no
 
 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
-
 ansible_terminal_initial_prompt_regex='(?:User:|Username:|login:)'
