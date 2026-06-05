@@ -1,5 +1,6 @@
 [cisco_routers]
-192.168.1.[150:200]
+192.168.1.150
+192.168.1.151
 [cisco_routers:vars]
 ansible_connection=network_cli
 ansible_network_os=cisco.ios.ios
