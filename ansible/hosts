@@ -7,6 +7,8 @@ ansible_network_os=cisco.ios.ios
 ansible_user=admin
 ansible_ssh_pass=123
 
+ansible_ssh_host_key_checking=False
+
 ansible_become=no
 
 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
