@@ -1,5 +1,3 @@
-[Báo cáo Chuyên Đề Mạng Máy Tính.docx](https://github.com/user-attachments/files/29157537/Bao.cao.Chuyen.D.M.ng.May.Tinh.docx)
-
 <img width="754" height="385" alt="image" src="https://github.com/user-attachments/assets/1ce12df1-2958-48a1-8aa0-6987924d21a8" />
 
 <img width="688" height="329" alt="image" src="https://github.com/user-attachments/assets/6f34bcac-54da-406b-8e79-a7e6db50cccc" />
